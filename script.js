@@ -39,7 +39,7 @@ function updateCarouselPosition() {
     const track = document.querySelector('.carousel-track');
     if (!track || cards.length === 0) return;
     
-    const cardWidth = cards[0].offsetWidth + 20; // including gap
+    const cardWidth = cards[0].offsetWidth + 30; // including gap
     track.style.transform = `translateX(${-currentSlide * cardWidth}px)`;
     
     // Update indicators
